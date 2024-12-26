@@ -29,7 +29,9 @@ module.exports = {
           200: colors.COLOR_BLACK_200,
           300: colors.COLOR_BLACK_300,
         },
-        danger: colors.COLOR_DANGER,
+        danger: {
+          DEFAULT: colors.COLOR_DANGER,
+        },
       },
     },
   },

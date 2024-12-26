@@ -2,9 +2,7 @@ import React from "react";
 import { Tabs } from "expo-router";
 import { COLOR_PRIMARY_200 } from "@/constants/colors";
 import TabIcon from "@/components/tab-icon";
-import HomeIcon from "@/components/icons/home";
-import ProfileIcon from "@/components/icons/profile";
-import ExploreIcon from "@/components/icons/explore";
+import { ExploreIcon, HomeIcon, ProfileFilledIcon } from "@/components/icons";
 
 function TabsLayout() {
   return (
@@ -46,7 +44,11 @@ function TabsLayout() {
           title: "Profile",
           headerShown: false,
           tabBarIcon: ({ focused }) => (
-            <TabIcon focused={focused} icon={ProfileIcon} title="Profile" />
+            <TabIcon
+              focused={focused}
+              icon={ProfileFilledIcon}
+              title="Profile"
+            />
           ),
         }}
       />
