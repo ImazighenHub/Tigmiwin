@@ -1,0 +1,9 @@
+export const COLOR_PRIMARY_100 = "#0061FF0A";
+export const COLOR_PRIMARY_200 = "#0061FF1A";
+export const COLOR_PRIMARY_300 = "#0061FF";
+export const COLOR_ACCENT_100 = "#FBFBFD";
+export const COLOR_BLACK_DEFAULT = "#000000";
+export const COLOR_BLACK_100 = "#8C8E98";
+export const COLOR_BLACK_200 = "#666876";
+export const COLOR_BLACK_300 = "#191D31";
+export const COLOR_DANGER = "#F75555";

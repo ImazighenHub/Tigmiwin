@@ -1,3 +1,5 @@
+import * as colors from "./constants/colors";
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
@@ -14,20 +16,20 @@ module.exports = {
       },
       colors: {
         primary: {
-          100: "#0061FF0A",
-          200: "#0061FF1A",
-          300: "#0061FF",
+          100: colors.COLOR_PRIMARY_100,
+          200: colors.COLOR_PRIMARY_200,
+          300: colors.COLOR_PRIMARY_300,
         },
         accent: {
-          100: "#FBFBFD",
+          100: colors.COLOR_ACCENT_100,
         },
         black: {
-          DEFAULT: "#000000",
-          100: "#8C8E98",
-          200: "#666876",
-          300: "#191D31",
+          DEFAULT: colors.COLOR_BLACK_DEFAULT,
+          100: colors.COLOR_BLACK_100,
+          200: colors.COLOR_BLACK_200,
+          300: colors.COLOR_BLACK_300,
         },
-        danger: "#F75555",
+        danger: colors.COLOR_DANGER,
       },
     },
   },
