@@ -72,7 +72,7 @@ export async function logout() {
  * Function to fetch the current user's details.
  * @returns {Promise<Object | false>} The user details with an avatar, or false if fetching fails.
  */
-export async function getUser() {
+export async function getCurrentUser() {
   try {
     const user = await account.get();
     if (user.$id) {
