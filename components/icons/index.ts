@@ -14,3 +14,4 @@ export { default as InviteIcon } from "./invite";
 export { default as LogoutIcon } from "./logout";
 export { default as LogoutBoldIcon } from "./logout-bold";
 export { default as ProfileFilledIcon } from "./profile-filled";
+export { default as EditCircleIcon } from "./edit-circle";

@@ -21,7 +21,7 @@ interface UseAppwriteReturn<T, P> {
   data: T | null; // The fetched data or null if not fetched yet.
   loading: boolean; // Indicates if the data is being loaded.
   error: string | null; // Error message if the fetch failed.
-  refetch: (newParams?: P) => Promise<void>; // Function to refetch the data with new parameters.
+  refetch: (newParams: P) => Promise<void>; // Function to refetch the data with new parameters.
 }
 
 /**
@@ -78,8 +78,8 @@ export const useAppwrite = <T, P extends Record<string, string | number>>({
    * Function to refetch data with new parameters.
    * @param newParams - New parameters for the fetch function.
    */
-  const refetch = async (newParams?: P) => {
-    await fetchData(newParams || params); // Use existing params if newParams is undefined.
+  const refetch = async (newParams: P) => {
+    await fetchData(newParams); // Use existing params if newParams is undefined.
   };
 
   return { data, loading, error, refetch }; // Return state and refetch function.
