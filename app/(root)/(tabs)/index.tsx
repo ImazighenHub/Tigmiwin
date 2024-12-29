@@ -9,8 +9,11 @@ import {
   RecommendationHeader,
 } from "@/components/home";
 import { properties } from "@/data";
+import { useGlobalContext } from "@/lib/global-provider";
 
 export default function Index() {
+  const { user } = useGlobalContext();
+
   return (
     <SafeAreaView className="bg-white h-full">
       <FlatList
@@ -34,7 +37,7 @@ export default function Index() {
         showsVerticalScrollIndicator={false}
         ListHeaderComponent={
           <View className="px-5">
-            <HomeHeader />
+            <HomeHeader user={user} />
             <SearchBar />
             <View className="mb-5">
               <FeaturedSection />

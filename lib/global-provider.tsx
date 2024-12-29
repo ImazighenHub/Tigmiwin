@@ -2,13 +2,6 @@ import { createContext, ReactNode, useContext } from "react";
 import { useAppwrite } from "@/lib/useAppwrite";
 import { getCurrentUser } from "@/lib/appwrite";
 
-interface User {
-  $id: string;
-  name: string;
-  email: string;
-  avatar: string;
-}
-
 interface GlobalContextType {
   isAuthenticated: boolean;
   user: User | null;
