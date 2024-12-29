@@ -15,3 +15,8 @@ export { default as LogoutIcon } from "./logout";
 export { default as LogoutBoldIcon } from "./logout-bold";
 export { default as ProfileFilledIcon } from "./profile-filled";
 export { default as EditCircleIcon } from "./edit-circle";
+export { default as SearchIcon } from "./search";
+export { default as SettingsIcon } from "./settings";
+export { default as StarFilledIcon } from "./star";
+export { default as HeartIcon } from "./heart";
+export { default as HeartFilledIcon } from "./heart-filled";
