@@ -8,7 +8,11 @@ import {
 } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { EditCircleIcon, LogoutIcon, ProfileIcon } from "@/components/icons";
+import {
+  EditCircleIcon,
+  LogoutIcon,
+  ProfileIcon,
+} from "../../../components/_icons";
 import SettingsItem from "@/components/settings-item";
 import { settings } from "@/constants/settings";
 import cn from "@/utils/cn";

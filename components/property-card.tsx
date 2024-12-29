@@ -1,20 +1,9 @@
 import React from "react";
-import {
-  ImageBackground,
-  ImageSourcePropType,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
-import { HeartFilledIcon, StarFilledIcon } from "@/components/icons";
+import { ImageBackground, Text, TouchableOpacity, View } from "react-native";
+import { Property } from "@/types";
+import { HeartFilledIcon, StarFilledIcon } from "@/components/_icons";
 
-interface PropertyCardProps {
-  title: string;
-  location: string;
-  image: ImageSourcePropType;
-  price: number;
-  rating: number;
-  isFavorite: boolean;
+interface PropertyCardProps extends Property {
   onPress?: () => void;
 }
 

@@ -1,0 +1,137 @@
+export const properties = [
+  {
+    id: "1",
+    title: "Riad Fes",
+    location: "Fes, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 15000,
+    rating: 4.9,
+    isFavorite: true,
+    onPress: () => console.log("Pressed Riad Fes"),
+  },
+  {
+    id: "2",
+    title: "Villa Marrakech",
+    location: "Marrakech, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 20000,
+    rating: 4.8,
+    isFavorite: false,
+    onPress: () => console.log("Pressed Villa Marrakech"),
+  },
+  {
+    id: "3",
+    title: "Kasbah Agadir",
+    location: "Agadir, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 18000,
+    rating: 4.7,
+    isFavorite: true,
+    onPress: () => console.log("Pressed Kasbah Agadir"),
+  },
+  {
+    id: "4",
+    title: "Dar Essaouira",
+    location: "Essaouira, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 12000,
+    rating: 4.6,
+    isFavorite: false,
+    onPress: () => console.log("Pressed Dar Essaouira"),
+  },
+  {
+    id: "5",
+    title: "Riad Chefchaouen",
+    location: "Chefchaouen, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 14000,
+    rating: 4.8,
+    isFavorite: true,
+    onPress: () => console.log("Pressed Riad Chefchaouen"),
+  },
+  {
+    id: "6",
+    title: "Villa Rabat",
+    location: "Rabat, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 22000,
+    rating: 4.9,
+    isFavorite: false,
+    onPress: () => console.log("Pressed Villa Rabat"),
+  },
+  {
+    id: "7",
+    title: "Kasbah Tangier",
+    location: "Tangier, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 16000,
+    rating: 4.7,
+    isFavorite: true,
+    onPress: () => console.log("Pressed Kasbah Tangier"),
+  },
+  {
+    id: "8",
+    title: "Riad Meknes",
+    location: "Meknes, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 13000,
+    rating: 4.6,
+    isFavorite: false,
+    onPress: () => console.log("Pressed Riad Meknes"),
+  },
+  {
+    id: "9",
+    title: "Villa Ouarzazate",
+    location: "Ouarzazate, Morocco",
+    image: require("@/assets/images/house.png"),
+    price: 17000,
+    rating: 4.8,
+    isFavorite: true,
+    onPress: () => console.log("Pressed Villa Ouarzazate"),
+  },
+];
+
+export const featured = properties.slice(0, 4);
+
+export const categories = [
+  {
+    id: 1,
+    name: "All",
+  },
+  {
+    id: 2,
+    name: "Apartment",
+  },
+  {
+    id: 3,
+    name: "House",
+  },
+  {
+    id: 4,
+    name: "Villa",
+  },
+  {
+    id: 5,
+    name: "Office",
+  },
+  {
+    id: 6,
+    name: "Hotel",
+  },
+  {
+    id: 7,
+    name: "Restaurant",
+  },
+  {
+    id: 8,
+    name: "Shop",
+  },
+  {
+    id: 9,
+    name: "Warehouse",
+  },
+  {
+    id: 10,
+    name: "Other",
+  },
+];

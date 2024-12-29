@@ -1,7 +1,7 @@
 import { TextInput, TouchableOpacity, View } from "react-native";
 import React, { useState } from "react";
 import { router, useLocalSearchParams, usePathname } from "expo-router";
-import { SearchIcon, SettingsIcon } from "@/components/icons";
+import { SearchIcon, SettingsIcon } from "@/components/_icons";
 import { COLOR_BLACK_200 } from "@/constants";
 import { useDebouncedCallback } from "use-debounce";
 

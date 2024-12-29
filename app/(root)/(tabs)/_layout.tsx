@@ -1,8 +1,12 @@
 import React from "react";
 import { Tabs } from "expo-router";
 import { COLOR_PRIMARY_200 } from "@/constants/colors";
-import TabIcon from "@/components/ui/tab-icon";
-import { ExploreIcon, HomeIcon, ProfileFilledIcon } from "@/components/icons";
+import TabIcon from "@/components/_ui/tab-icon";
+import {
+  ExploreIcon,
+  HomeIcon,
+  ProfileFilledIcon,
+} from "../../../components/_icons";
 
 function TabsLayout() {
   return (

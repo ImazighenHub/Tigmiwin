@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import { SvgProps } from "react-native-svg/src/elements/Svg";
 import { Text, TouchableOpacity, View } from "react-native";
 import cn from "@/utils/cn";
-import AngleRightIcon from "@/components/icons/angle-right";
+import AngleRightIcon from "@/components/_icons/angle-right";
 
 interface SettingsItemProps {
   icon: (props: SvgProps) => ReactNode;

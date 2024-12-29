@@ -7,7 +7,7 @@ import {
   PaymentIcon,
   ProfileIcon,
   ShieldCheckIcon,
-} from "@/components/icons";
+} from "../components/_icons";
 
 export const settings = [
   [

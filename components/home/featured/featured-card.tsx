@@ -1,21 +1,10 @@
 import React from "react";
-import {
-  ImageBackground,
-  ImageSourcePropType,
-  Text,
-  TouchableOpacity,
-  View,
-} from "react-native";
+import { ImageBackground, Text, TouchableOpacity, View } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
-import { HeartFilledIcon, StarFilledIcon } from "@/components/icons";
+import { HeartFilledIcon, StarFilledIcon } from "../../_icons";
+import { Property } from "@/types";
 
-interface FeaturedCardProps {
-  title: string;
-  location: string;
-  image: ImageSourcePropType;
-  price: number;
-  rating: number;
-  isFavorite: boolean;
+interface FeaturedCardProps extends Property {
   onPress?: () => void;
 }
 

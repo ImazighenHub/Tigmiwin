@@ -2,56 +2,14 @@ import { ScrollView, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import { router, useLocalSearchParams } from "expo-router";
 import cn from "@/utils/cn";
-
-const categories = [
-  {
-    id: 1,
-    name: "All",
-  },
-  {
-    id: 2,
-    name: "Apartment",
-  },
-  {
-    id: 3,
-    name: "House",
-  },
-  {
-    id: 4,
-    name: "Villa",
-  },
-  {
-    id: 5,
-    name: "Office",
-  },
-  {
-    id: 6,
-    name: "Hotel",
-  },
-  {
-    id: 7,
-    name: "Restaurant",
-  },
-  {
-    id: 8,
-    name: "Shop",
-  },
-  {
-    id: 9,
-    name: "Warehouse",
-  },
-  {
-    id: 10,
-    name: "Other",
-  },
-];
+import { categories } from "@/data";
 
 type Category = {
   id: number;
   name: string;
 };
 
-const CategoryFilter = () => {
+const RecommendationFilter = () => {
   const params = useLocalSearchParams<{ filter?: string }>();
   const [selectedCategory, setSelectedCategory] = useState<Category>(
     categories.find((category) => category.name === params.filter) ||
@@ -72,7 +30,7 @@ const CategoryFilter = () => {
     <ScrollView
       horizontal
       showsHorizontalScrollIndicator={false}
-      className="mt-3 mb-2"
+      className="mt-3"
     >
       {categories.map((category) => (
         <TouchableOpacity
@@ -98,4 +56,4 @@ const CategoryFilter = () => {
     </ScrollView>
   );
 };
-export default CategoryFilter;
+export default RecommendationFilter;
